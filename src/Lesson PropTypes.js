@@ -10,18 +10,10 @@ export const Counter = ({counter = 0}) => {
 	return <h1>Counter component value: {counter}</h1>
 }
 
-// Counter.propTypes = {
-// 	counter: PropTypes.number.isRequired,
-// 	func: PropTypes.func,
-// 	number: PropTypes.number,
-// 	string: PropTypes.string
-// }
+export const Button = () => (
+	<button>Simple button</button>
+)
 
-// Counter.defaultProps = {
-// 	func: () => {},
-// 	number: 0,
-// 	string: ""
-// }
 
 export class Lesson extends Component {
 	static propTypes = {
@@ -44,9 +36,10 @@ export class Lesson extends Component {
 
 	render() {
 		const {counter} = this.state;
-		const {children} = this.props;
+		const {children, child} = this.props;
 		return	(
 			<div>
+					{child}
 					<div>{counter}</div>
 					{React.cloneElement(children, {counter: this.state.counter} )} 
 					<button onClick={this.handleClick}>+1</button>

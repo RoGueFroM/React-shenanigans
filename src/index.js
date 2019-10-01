@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from "prop-types";
-import {Lesson, Counter} from "./Lesson PropTypes";
+import {Lesson, Counter, Button} from "./Lesson PropTypes";
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -53,5 +53,5 @@ import * as serviceWorker from './serviceWorker';
 
 // ====================================================================================
 
-ReactDOM.render(<Lesson><Counter /></Lesson>, document.getElementById('root'));
+ReactDOM.render(<Lesson child={<Button />}><Counter /></Lesson>, document.getElementById('root'));
 serviceWorker.unregister();
