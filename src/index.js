@@ -53,5 +53,5 @@ import * as serviceWorker from './serviceWorker';
 
 // ====================================================================================
 
-ReactDOM.render(<Lesson> <Counter /> </Lesson>, document.getElementById('root'));
+ReactDOM.render(<Lesson><Counter /></Lesson>, document.getElementById('root'));
 serviceWorker.unregister();

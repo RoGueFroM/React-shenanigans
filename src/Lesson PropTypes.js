@@ -24,13 +24,12 @@ export const Counter = ({counter = 0}) => {
 // }
 
 export class Lesson extends Component {
-	
 	static propTypes = {
-		children: PropTypes.element
+		children: PropTypes.element,
 	}
 	
 	static defaultProps = {
-		children: null
+		children: null,
 	}
 
 	state = {
@@ -45,9 +44,11 @@ export class Lesson extends Component {
 
 	render() {
 		const {counter} = this.state;
+		const {children} = this.props;
 		return	(
 			<div>
 					<div>{counter}</div>
+					{React.cloneElement(children, {counter: this.state.counter} )} //nasty method to get props from parrent
 					<button onClick={this.handleClick}>+1</button>
 			</div>
 		);
