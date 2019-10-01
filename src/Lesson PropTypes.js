@@ -48,9 +48,11 @@ export class Lesson extends Component {
 		return	(
 			<div>
 					<div>{counter}</div>
-					{React.cloneElement(children, {counter: this.state.counter} )} //nasty method to get props from parrent
+					{React.cloneElement(children, {counter: this.state.counter} )} 
 					<button onClick={this.handleClick}>+1</button>
 			</div>
 		);
 	}
 }
+
+ // ^ nasty React.cloneElement to get props from parrent
