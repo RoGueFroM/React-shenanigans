@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import App from "./Conditional rendering/Conditional rendering.js";
 import './index.css';
 import * as serviceWorker from './serviceWorker';
