@@ -20,11 +20,12 @@ class App extends Component {
 	handleClick = (event) => {
 		event.preventDefault();
 		console.log('Clicked on link');
+		// this.test();
 	}
   
 	render() {
 		return (
-			<MyLink onClick={(event) => this.handleClick(event, "test")}/>	
+			<MyLink onClick={this.handleClick}/>	
 		)
 	}
 }
