@@ -20,7 +20,6 @@ class App extends Component {
 	handleClick = (event) => {
 		event.preventDefault();
 		console.log('Clicked on link');
-		// this.test();
 	}
   
 	render() {
