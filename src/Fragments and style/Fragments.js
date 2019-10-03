@@ -1,9 +1,16 @@
-import React, {Component} from "react";
+import React, {Component, Fragment} from "react";
 
-const Columns = () => ([
-		<td key="1">Hello</td>,
-		<td key="2">World</td>
-]);
+// const Columns = () => ([
+// 		<td key="1">Hello</td>,
+// 		<td key="2">World</td>
+// ]);
+
+const Columns = () => (
+		<Fragment>
+			<td>Hello</td>
+			<td>World</td>
+		</Fragment>
+);
 
 const Table = () => (
 	<table>
