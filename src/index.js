@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 // import PropTypes from "prop-types";
-import App from "./Conditional rendering/Conditional rendering.js";
+import Table from "./Fragments and style/Fragments.js";
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Table />, document.getElementById('root'));
 serviceWorker.unregister();
