@@ -5,10 +5,11 @@ import React, {Component, Fragment} from "react";
 // 		<td key="2">World</td>
 // ]);
 
+
 const Columns = () => (
 		<Fragment>
-			<td>Hello</td>
-			<td>World</td>
+			<td style={{color: "red", textTransform: "uppercase"}}>Inline</td>
+			<td>Simple Class</td>
 		</Fragment>
 );
 
